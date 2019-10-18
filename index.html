@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1> Unit 3 Portfolio - Elaine Nguyen</h1>
+
+    
+    <h2> 3.2 - Paint Pot Tutorial </h2>
+
+    <h3> 1) Explain the meaning of the statements shown here, both in AP CSP pseudocode and App Inventor. For example, suppose the variable X has the value 10 before the statement is executed. What value would it have after the statement is executed?  </h3>
+    
+    <h4> If the variable X was 10 and the statement is executed you would be left with 11. This is because "X" which is 10 + 1 would equal 11.</h4>
+
+    <h3> 2) One aspect of abstraction is that it helps to reduce details to focus on what's relevant. How does the use of a variable, such as dotsize, instead of a value, such as '5', help to reduce detail and focus on what is essential in this program?  </h3>
+
+    <h4>The variable dot size is used instead of the variable '5' because it is less specific and is a quick description. However, still represents what is trying to be conveyed.
+    </h4>
+
+
+    <h2> 3.3 - Representing Images </h2>
+
+    <h3> 1) Decode this message by converting it from binary to ASCII: 1000001 1110000 1110000 0100000 1001001 1101110 1110110 1100101 1101110 1110100 1101111 1110010 0100000 1010010 1001111 1000011 1001011 1010011 0100001 </h3>
+
+    <h4> 65 = A, 112 = p, 112 = p, 32 = sp, 73 = I, 110 = n, 118 = v,
+    101 = e, 110 = n, 116 = t, 111 = o, 114 = r, 32 = sp, 82 = R, 
+    79 = O, 67 = C, 75 = K, 83 = S, 33 = !                        
+    Which makes up the words "App Inventor ROCKS!"" </h4>
+
+    <h3> 2) Describe what it means to say that JPEG is a lossy compression technique and whether or not it affects the quality of camera pictures.  </h3>
+
+    <h4> Jpeg is considered lossy because it is not as detailed as the original picture and contains less pixels. This is done to lower the unnecessary storage space it might take up and because it is not noticable to the human eye. </h4>
+
+    <h3> 3) Give a specific example of a binary sequence that can represent more than one type of data -- e.g., a number, a color, a character -- and describe how to interpret its different values.  </h3>
+
+    <h4> 1010011 could be represented as "S", the number 83 or the color #000053 based on RBG. It is all interpreted by bits but in a different way depending on what it is trying to represent. </h4>
+
+
+
+    <h2>3.4 - Paint Pot Projects </h2>
+
+    <h3> 1) For enhancement #5 (the "If Block Exercise") give a brief description of your solution to this problem. PROVIDE A SCREENSHOT OF YOUR APP'S CODE -- the revised blocks -- and describe how the if/else block works to solve the problem in this case. If appropriate, include a description of any significant problems or bugs you encountered in solving this problem. App Inventor now has a Download Blocks as Image feature (right click on the white space in the blocks editor to choose) that also can be used to take a screenshot of all of your code or the Windows snipping tool can be used.  </h3>
+
+    <h4> For our app instead of using the If/else block we used three different buttons to adjust the dotsize. As shown below, if either LargeButton or SmallButton is clicked it would either add 1 or substract one based on the button clicked. And the set global dotsize block is added to set the original dotsize to always be 2 and add 1 or subtract 1 when desired, or possibly even reset the dotsize. </h4>
+     
+ <img
+    src="https://cms.jotform.com/uploads/image_upload/image_upload/global/94780_Screen%20Shot%202019-10-17%20at%207.28.56%20PM.png" width= "500"/>
+
+    <h3> 2) When you use the Camera component to take a picture as the Canvas background, explain why the picture goes away when the app is restarted. HINT: Think about the different hardware components we talked about in an earlier lesson and where on the device the picture is stored. What do you think could be done to prevent the picture from disappearing when the app is restarted?  </h3>
+
+    <h4> When we use the camera component to take a picture as the canvas background, the picture goes away when the app is restarted because the new image is not backed up in anyway. This is because we didn't set up any way for the cokmputer to save any new memory. However, there are many ways to solve this issue: one way to reslove this is to add a storage component.</h4>
+
+
+
+    <h2>3.5 - Paint Pot Refactoring and Procedural Abstraction </h2>
+
+    <h3> 1) The Wikipedia article on refactoring talks about code smell and one motivation for engaging in refactoring. What is code smell? Describe briefly two examples of "code smell" and how refactoring would eliminate them.  </h3>
+
+    <h4> Code smell is when a code works but can be easily simplified. An example is multiple reoccuring blocks repeated throughout the code or if a code is too complex to understand and could be made simpler. Refactoring could eliminate this problem by simplifying the code and making it easier for the computer to interpret.</h4>
+
+    <h3> 2) Insert a screenshot of the procedure from your app below.  </h3>
+
+    <img
+    src="https://cms.jotform.com/uploads/image_upload/image_upload/global/94781_Screen%20Shot%202019-10-17%20at%208.12.46%20PM.png" width= "500"/>
+
+    <h3> 3) What are the advantages of using procedural abstraction? Name at least 2 advantages.</h3>
+
+    <h4> Advantages to using procedural abstraction is the simplicity to edit using only a couple of blocks and how it would be easier to transfer into a new program (if preferred).</h4>
+
+
+
+    <h2>3.6 - Error Detection </h2>
+
+    <h3> 1) (POGIL) Describe an algorithm for identifying the card that was flipped.  </h3>
+
+    <h4> The algorithm for identifying the card that was flipped depends on if you were doing it based on odds or even. You would add remaining cards to cover either the left/right side and top/bottom to make it even or odd. Then if another card is flipped you can easily identify it by going through vertically and horizontally to see if it has made the row or column the opposite of which ever you picked (odd/even).</h4>
+
+    <h3> 2) (POGIL) The card "trick" shows that it is always possible to identify the card that was flipped as long as only one card was flipped. Would it be possible always to determine if an error occurred if two cards were flipped?  </h3>
+
+    <h4> Yes, it is possible however if it were to occur in the same row or column it would result in more difficulty but overall entirely possible.</h4>
+
+
+
+    <h2>3.7 - Parity Error Checking </h2>
+
+    <h3> 1) Explain how the error card trick from the Error Detection lesson uses a parity scheme. Was it an even or odd parity scheme? </h3>
+
+    <h4> The parity scheme is used in the card trick by using the odd and even method. If even was chosen for example and the card flipped made it odd the parity scheme could identify this error because it has altered a row and column.</h4>
+
+    <h3> 2) What are some of the limitations of using parity bits for error detection?  </h3>
+
+    <h4> Some limitations of using parity bits for error detection includes the larger the data gets when trying to identify multiple errors. And even so, the parity technique can only find if an error is present and can not possibly fix it.</h4>
+
+    <h3> 3) Another type of error detection is a check sum. Research what a check sum is and then describe it in your own words. Can a check sum identify where an error occurs? </h3>
+
+    <h4> Check sum is when the sum of the bits are being checked and if it is altered you can easily tell where the mistake occured because it results in a different sum.</h4>
+
+    <h3> 4) (Optional) Explain in your own words the difference between error detection and error correction. Describe how the error correction process used in the video above allows the computer to fix errors.  </h3>
+
+    <h4> The difference between error detection and error correction is that; error detection is only capable of identifying if there is an error in the code or not. While, error correction could actually locate the exact location the error is in. In the video a venn diagram was used to locate the errors by adding 3 bits to the 4 bits that was flipped. </h4>
+
+
+
+    <h2> 3.8 - Map Tour Tutorial </h2>
+
+    <h3> 1) How are lists used in this app? Why is a list a useful data abstraction or an abstract data type (ADT) in programming? Is it easy to add new destinations to the tour?  </h3>
+
+    <h4>The list component was used to make it abstract for the user to easily choose a choice. A list is useful in programming because it is simpler and you can pick out of a list rather than going through the whole app looking for various options. It is not as easy to add new destinations to the tour because it includes more components rather than just lists on its own.</h4>
+
+    <h3> 2) How do APIs simplify complex programming tasks? Pick an app that you use on your device (e.g. Twitter, Google Maps) and see whether it provides an API and some of the functions you can control with it. Describe your results below. </h3>
+
+    <h4>APIs simplify complex programming tasks by creating a user interface that allows the user to see the design portion and enables them to interact with it rather than seeing the code behind it. An app that provides an API and some functions you can control includes "instagram" it allows the user to post a photo as well as geotag the location. </h4>  
+
+    <h3> 3) How is GPS used in this app? Do some research to find out how GPS works and describe it here in a couple sentences. </h3>  
+
+    <h4> GPS is used in this app by identifying the persons coordinates to pinpoint their exact location.</h4>  
+
+    <h3> Insert screenshots of the enhancements that you made below and describe how they work. </h3>   
+
+    <img
+    src="https://cms.jotform.com/uploads/image_upload/image_upload/global/94783_Screen%20Shot%202019-10-17%20at%2010.24.39%20PM.png" width= "500"/> 
+
+    <h4>Enhancements that we included as a grouop included the ability to pick out of a list the lovcation you want to see using the GPS, and once you click on the location it also takes you to a wiki page describing your destination.</h4>   
+
+
+
+    <h2>3.9 - Map Tour with Tiny DB </h2>                                                                
+    <h3> 1) What does it mean to say that data is 'persistent'? </h3>
+
+    <h4> When data is persistent it means that the data has been svaed and could be accessed even if you exit the app.</h4>
+
+    <h3>2) What's the difference, in terms of where data is located, for data stored in a global variable vs. data stored in a database? </h3>
+
+    <h4>When data is stored in a global variable it will not be saved. However, if it were to be saved in the data stored in a database like tinydb for example it can be accessed later.</h4>
+
+
+    <h3>3) Include screenshots and explanations of your enhancements. </h3>   
+
+     <img
+    src="https://cms.jotform.com/uploads/image_upload/image_upload/global/94787_Screen%20Shot%202019-10-18%20at%2012.14.58%20AM.png" width= "500"/>    
+
+    <h4>The tinydb enhancement allows the new location to be saved and furthermore reappear even after the app is closed and reopened. </h4>
+
+
+
+    <h2>3.10 Impacts of CS: Electronic Documents </h2>
+
+    <h3>1) What is metadata? Give an example of how a piece of metadata could be used to increase the usefulness of an image or document. </h3>
+
+    <h4> Metadata describes other data by giving information about other data. An example of how metadata is used to increase the usefulness of an image or document because it contains additional information on the images or document.</h4>
+
+    <h3>2) What is a model? </h3>
+
+    <h4> A model is a representation of anything or a replication of anything in bits. </h4>
+
+    <h3> 3) What's the difference between a raster image and an ASCII representation of a text document? </h3>
+
+    <h4>A raster image is made up of pixels, while the ASCII represents the standard alphabet</h4>
+
+    <h3>4) What are filename extensions? What are they used for? </h3>
+
+    <h4> File name extensions are capable of communicating how a file name should be interpreted. They are used for identifying a certain type of file: an example is ".png".</h4>
+
+    <h3>5) What is lossless representation? What is lossy representation? What are the trade-offs in using each representation? </h3>
+
+    <h4> Lossless representation is when an image is at it's full potential and you can see all their pixels, while lossy is when most of the pixels are taken out to make the file smaller and less likely to corrupt. Each of these representations can be used to either fully bask the image and all its pixels or quickly transfer the image around witht the minimal pixels. </h4>
+
+    <h3>6) What is steganography and what is it used for? Describe in your own words the steganography algorithm used in the activity.  </h3>
+
+    <h4>Steganography is a language that is hidden and has to be deciphered enable to figure out. A stegonography algorithm used in the recent activities we did include the bits used to create an image or symbol. </h4>
+
+    <h3> 7) What would you have to do to delete a document from your computer so that it could not possibly be read by anyone else? </h3>
+
+    <h4>If by any chance you would want to delete a document from your computer you can delete it by deleting it's original file then deleting it from the trash. You could also download a sodtware to get rid of the file completely. </h4>
+
+    <h3>8) What is free and open source software? Provide an example. </h3>
+
+    <h4> Free and open source software is a software that allows you to modify and add on, free of charge. An example could be wikipedia or github. </h4>
+
+
+
+    <h2>Free Response </h2>
+
+    <h3>9) How has retouching become a controversial issue? Give an example. </h3>
+
+    <h4> Retouching has become a controversial issue because it can be used in negative ways to encourage self hate or jealousy. An example is social media posts.</h4>
+
+    <h3>10) Would you rather own a camera (or camera phone) with a higher number of megapixels or lower? Explain.  </h3>
+
+    <h4>I would rather have my own camera with lower pixels because I take a lot of photos and would rather have more storage space to fit all my photos than higher quality images.</h4>
+
+    <h3>11) Other than digital images, what might be an example of a computer model? Explain your answer based on the definition of a model.  </h3>
+
+    <h4> Another example of a model besides images could be .html files because it consists of code making up a webpage</h4>
+
+    <h3>The code that implements App Inventor is open source and its impact on education is obvious. Find another example of open source software and describe its positive impact on education, business or society. </h3>
+
+    <h4>Another open source software that has a positive impact on education could be github; because it allows users to exchange code and learn from one another.</h4>
+
+
+    <script src="script.js"></script>
+  </body>
+
+
+</html>
